@@ -1,7 +1,7 @@
 {
-  "name": "@ty/response",
+  "name": "e-response",
   "version": "1.0.0",
-  "description": "A package that help debug in a more readable and help return error and success message in a general format throughout your code base ",
+  "description": "A package that helps debug in a more readable manner, by logging logged error and success message in the terminal in a well-formatted manner, which aids readability and helps in the separation of different logged responses as well as returning server success and error message in a general format throughout your codebase",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
