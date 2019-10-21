@@ -16,12 +16,12 @@ This instructions will get you started on how to use this package.
 
 A step by step series of examples that tell you how to get a development env running
 ```
- npm install f-response to install dependency
+ npm install e-response to install dependency
 ```
 
 ## Usage
 ```
-const response = require ("f-response");
+const response = require ("e-response");
 
 ```
 ## To log an error or success message ("tag",value)
