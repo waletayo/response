@@ -13,15 +13,13 @@ This instructions will get you started on how to use this package.
 
 
 ### Install via NPM
-
-A step by step series of examples that tell you how to get a development env running
 ```
- npm install e-response to install dependency
+ npm install v-response to install dependency
 ```
 
 ## Usage
 ```
-const response = require ("e-response");
+const response = require ("v-response");
 
 ```
 ## To log an error or success message ("tag",value)
