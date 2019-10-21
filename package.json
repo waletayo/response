@@ -1,0 +1,11 @@
+{
+  "name": "@ty/response",
+  "version": "1.0.0",
+  "description": "A package that help debug in a more readable and help return error and success message in a general format throughout your code base ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tycodez",
+  "license": "ISC"
+}
