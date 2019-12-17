@@ -24,16 +24,16 @@ const response = require ("v-response");
 ```
 ## To log an error or success message ("tag",value)
 ```
-response.log("this is an error", payemnterror);
-response.log("payment successful", payemntsuccessful);
+response.log("this is an error: ", payemnterror);
+response.log("payment successful: ", payemntsuccessful);
 
     -------------------------------------------------------------------------------
-          this is an error, paymenterror
+          this is an error: paymenterror
     -------------------------------------------------------------------------------
     
     
     -------------------------------------------------------------------------------
-          payment successful, payemntsuccessful
+          payment successful: payemntsuccessful
     -------------------------------------------------------------------------------
 
 ```
@@ -66,14 +66,14 @@ app.get("/generate_opt",(req,res) => {
 //if set to false only numbers will be generated 
 
 let Otp = response.generateOTCode(6,false);
-response.log("OneTimePassword",Otp);
+response.log("OneTimePassword: ",Otp);
 
 })
 ```
 ## Result
 ```
  -------------------------------------------------------------------------------
-          OneTimePassword, 234574
+          OneTimePassword: 234574
     -------------------------------------------------------------------------------
 ```
    
