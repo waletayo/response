@@ -28,5 +28,21 @@ function apiResponse(success, code, message, data = undefined, server_err = unde
     }
 }
 
+//generate OTP
+function generateOTCode(size = 6, alpha = false) {
+    let characters = alpha ? '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' : '0123456789';
+    characters = characters.split('');
+    let selections = '';
+    for (let i = 0; i < size; i++) {
+        let index = Math.floor(Math.random() * characters.length);
+        selections += characters[index];
+        characters.splice(index, 1);
+    }
+    return selections;
+};
+
+
+module.exports.generateOTCode = generateOTCode;
+
 module.exports.ApiResponse = apiResponse;
 module.exports.log = log;
