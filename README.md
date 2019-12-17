@@ -54,6 +54,30 @@ app.get("/", (req, res) => {
 })
 ```
 
+
+## To generate random Numbers either numeric or alphanumeric
+
+```
+app.get("/generate_opt",(req,res) => {
+//expecting two callback (size,true | false)
+
+//if set to true numbers and letters will be generated
+
+//if set to false only numbers will be generated 
+
+let Otp = response.generateOTCode(6,false);
+response.log("OneTimePassword",Otp);
+
+})
+```
+## Result
+```
+ -------------------------------------------------------------------------------
+          OneTimePassword, 234574
+    -------------------------------------------------------------------------------
+```
+   
+
 ## Author
 
 * **tycodez** 
