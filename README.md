@@ -76,7 +76,31 @@ response.log("OneTimePassword: ",Otp);
           OneTimePassword: 234574
     -------------------------------------------------------------------------------
 ```
-   
+   ## To sign Jwt Token
+   ```
+  let Generate_jwt = response.signToken(payload,secret);
+  response.log("Jwt token:",Generate_jwt);
+  
+   ```
+   ## Result
+   ```
+   ------------------------------------------------------------------------------
+  Jwt token:      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlNTY1NWJlNzJkODVhMDk1MDUyNWFhOCIsImlhdCI6MTU4Mjc5MjQ1NX0.niULywaPIaF01vBNpgNaCeerSJt8xW3vlRWlqkmn0sQ
+-------------------------------------------------------------------------------
+
+```
+   ## To hash password
+   ```
+        let _hash_password =  response.hashedPassword(req.body.password, 10);
+        response.log("Hashed password:",_hash_password);
+   ```
+   ## Result
+   ```
+   -------------------------------------------------------------------------------
+Hashed password: $2a$10$RwaB/O4KUm5tw6VIvVlNMeFblya1fEut4pHeWbvCkw9i/K.cl8iru
+-------------------------------------------------------------------------------
+```
+
 
 ## Author
 
