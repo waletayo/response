@@ -9,8 +9,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/waletayo/response.git"
-
   },
   "author": "tycodez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "q": "^1.5.1"
+  }
 }
